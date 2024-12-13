@@ -13,6 +13,8 @@ function createGrid(value=16){
         container.appendChild(div);
 
     }
+    
+    
 }
 
-createGrid();
+createGrid(100);
