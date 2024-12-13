@@ -8,20 +8,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 2% 10%;
+  flex-direction: column;
+  height: 100vh;
 }
 
 #container {
   display: flex;
   flex-direction: column;
-  height: 80vh;
-  width: 80vw; /* Abarca todo el ancho de la pantalla *//* Abarca todo el alto de la pantalla */
-  
+  width: 100%;
+  flex: 1 0 0;
+  height: 70vh;
 }
 
 .rowDiv {
   display: flex;
   height: 50px;
+  flex:1;
   
 
 }
@@ -29,9 +32,33 @@ body {
 .element {
     width: 50px;
     height: auto;
-    background-color: #ffffffff;
-    border: 1px #000000 solid;
     flex: 1;
+    background-color: #c9c8a4;
 
 }
 
+.backColor{
+  background-color: black;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 0 0;
+    width: 100%;
+}
+button {
+  background-color: #967a63;
+  color: #ffffff;
+  align-self: end;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  border: 0;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: rgb(12, 12, 12);
+  animation: backwards;
+}
